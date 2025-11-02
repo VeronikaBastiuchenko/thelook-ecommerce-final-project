@@ -118,9 +118,6 @@ Champions, Loyal, At Risk, Regular.
 - **Retention:** customer activity drops notably after **2–3 months**, highlighting the need for loyalty initiatives  
 - **Conversion Funnel:** conversion from **registered → paying** customers ranged between **76–82%**
 
- *This structure section can replace the plain-text version in your README —  
-it will render perfectly aligned on GitHub and be easy to scan visually.*
-
 
 Author
 
