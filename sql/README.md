@@ -6,7 +6,7 @@ Each query focuses on a specific analytical task and was used to build the datas
 
 ---
 
-### 🧱 Analytical Tables Created in BigQuery
+### Analytical Tables Created in BigQuery
 
 | Table Name | Description |
 |-------------|-------------|
@@ -24,7 +24,7 @@ Each query focuses on a specific analytical task and was used to build the datas
 
 ---
 
-### 📁 Folder Structure
+### Folder Structure
 
 All SQL scripts are stored in this folder:
 
