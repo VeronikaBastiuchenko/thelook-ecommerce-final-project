@@ -108,8 +108,8 @@ Champions, Loyal, At Risk, Regular.
 
 
 thelook-ecommerce-final-project/
-├── README.md                     - main project documentation
-├── sql/                          - all analytical SQL scripts
+├── README.md                     ← main project documentation
+├── sql/                          ← all analytical SQL scripts
 │   ├── monthly_revenue.sql
 │   ├── category_revenue.sql
 │   ├── new_vs_repeat.sql
@@ -121,14 +121,14 @@ thelook-ecommerce-final-project/
 │   ├── conversion_from_reg_to_paying.sql
 │   └── total_customers.sql
 ├── colab/
-│   ├── My_Final_project.ipynb    - main Python notebook
+│   ├── My_Final_project.ipynb    ← main Python notebook
 │   └── README.md
 ├── dashboard/
 │   ├── README.md
 │   └── TheLook_eCommerce_-_Business_Insights_Dashboard.pdf
-├── images/                       - screenshots for README & dashboard
+├── images/                       ← screenshots for README & dashboard
 │   └── .gitkeep
-└── sql/debug/                    - helper validation queries
+└── sql/debug/                    ← helper validation queries
 
  Key Findings
 	•	Revenue Growth increased by ~65% YoY in 2025.
