@@ -1,9 +1,8 @@
 #  TheLook eCommerce – Final Analytics Project
 
 This project analyzes **customer behavior, revenue performance, and retention trends** in an eCommerce environment using the public dataset **TheLook (BigQuery)**.  
-The goal was to simulate the workflow of a data analyst — from SQL data modeling in BigQuery to Python analysis in Colab and interactive dashboards in Looker Studio.
+The goal was to simulate the workflow of a data analyst - from SQL data modeling in BigQuery to Python analysis in Colab and interactive dashboards in Looker Studio.
 
----
 
 ##  Project Overview
 
@@ -25,7 +24,6 @@ Environment: **Google BigQuery (SQL)**
 Project dataset:  
 my-educational-project-476420.thelook_ecommerce_project
 
----
 
 ## Data Pipeline & Analytical Tables
 
@@ -48,7 +46,6 @@ All analytical tables were created in **BigQuery** via custom SQL scripts (see `
 Full SQL code for each table is available here:  
 [View `/sql/` folder](./sql)
 
----
 
 ## Python & Colab Notebook
 
@@ -103,11 +100,11 @@ Champions, Loyal, At Risk, Regular.
 
 | Layer | Tools |
 |-------|--------------|
-| **Data Storage** | Google BigQuery
-| **ETL & Modeling** | SQL (CTE, Window Functions)
-| **Analysis** | Python (Pandas, Pandas-GBQ, Colab)
-| **Visualization** | Looker Studio
-| **Version Control** | GitHub
+| **Data Storage** | Google BigQuery |
+| **ETL & Modeling** | SQL (CTE, Window Functions) |
+| **Analysis** | Python (Pandas, Pandas-GBQ, Colab) |
+| **Visualization** | Looker Studio |
+| **Version Control** | GitHub |
 
 
 thelook-ecommerce-final-project/
