@@ -1,2 +1,175 @@
-# thelook-ecommerce-final-project
-This project analyzes customer behavior and revenue dynamics in an eCommerce business using the public dataset TheLook.
+#  TheLook eCommerce – Final Analytics Project
+
+This project analyzes **customer behavior, revenue performance, and retention trends** in an eCommerce environment using the public dataset **TheLook (BigQuery)**.  
+The goal was to simulate the workflow of a data analyst — from SQL data modeling in BigQuery to Python analysis in Colab and interactive dashboards in Looker Studio.
+
+---
+
+##  Project Overview
+
+The analysis explores customer lifecycle, purchase dynamics, and product performance using cohort, RFM, and Pareto frameworks.  
+Key questions addressed:
+
+- How does revenue evolve over time (YoY & MoM)?
+- Which product categories drive the most revenue?
+- What is the share of new vs returning customers?
+- How loyal are customers (retention & RFM segmentation)?
+- What % of registered users convert into paying customers?
+
+---
+
+##  Data Source
+
+Dataset: [`bigquery-public-data.thelook_ecommerce`](https://console.cloud.google.com/marketplace/product/bigquery-public-data/thelook-ecommerce)  
+Environment: **Google BigQuery (SQL)**  
+Project dataset:  
+my-educational-project-476420.thelook_ecommerce_project
+
+---
+
+## Data Pipeline & Analytical Tables
+
+All analytical tables were created in **BigQuery** via custom SQL scripts (see `/sql` folder):
+
+| Table | Description |
+|-------|--------------|
+| **monthly_revenue** | Monthly revenue tracking and YoY/MoM growth. |
+| **category_revenue** | Total revenue by product category. |
+| **aov_by_category** | Average Order Value (AOV) per category. |
+| **new_vs_repeat** | Splits users into new vs repeat buyers. |
+| **rfm_base** | Recency, Frequency, Monetary scoring base. |
+| **pareto_products** | Pareto 80/20 ranking of top revenue-generating products. |
+| **basket_pairs_base** | Base for market-basket analysis (product combinations). |
+| **cohorts_base** | Cohort-level mapping of users and orders (used for retention). |
+| **cohorts_looker** | Final cohort retention table used in Looker Studio. |
+| **conversion_from_reg_to_paying** | Conversion of registered to paying users. |
+| **total_customers** | Total active, registered, and paying customers over time. |
+
+Full SQL code for each table is available here:  
+[View `/sql/` folder](./sql)
+
+---
+
+## Python & Colab Notebook
+
+Notebook: [`colab/My_Final_project.ipynb`](./colab/My_Final_project.ipynb)  
+
+Main tasks implemented in Python:
+
+- Connection and authentication to **BigQuery** (`pandas-gbq`, `google.cloud.bigquery`)
+- Loading analytical tables into Pandas
+- **RFM segmentation** using quantile scoring (`qcut`)
+- **Cohort analysis** — calculating month-to-order retention matrix
+- Uploading processed tables back to BigQuery
+- Exporting RFM segment summaries for visualization in Looker Studio
+
+Key Python snippets:
+
+```python
+from google.colab import auth
+auth.authenticate_user()
+
+from pandas_gbq import read_gbq
+import pandas as pd
+pd.set_option('display.max_columns', None)
+
+Dashboard – Business Insights
+
+Dashboard link:
+TheLook eCommerce – Business Insights Dashboard (Looker Studio)￼
+(replace with your published URL if public)
+
+PDF version available here:
+TheLook_eCommerce_-_Business_Insights_Dashboard.pdf￼
+
+Dashboard Pages:
+
+1️ Overview – Revenue Performance
+	•	Yearly Revenue & Growth (YoY%)
+	•	Top 10 Categories by Revenue
+	•	Revenue vs Average Order Value (AOV)
+	•	Pareto 80/20 Product Distribution
+
+2️ Customer Insights & Retention
+	•	Total Revenue, Total Customers, Avg. Order Value
+	•	Cohort Retention Table (month-to-order analysis)
+	•	RFM Segments Distribution (Pie Chart)
+	•	Conversion from Registered to Paying Users (Trend Line)
+
+⸻
+
+ Methodologies Used
+
+1. Cohort Analysis
+→ Measures customer retention over months since first purchase.
+Output: retention heatmap (% of active users by cohort).
+
+2. RFM Segmentation
+→ Segments customers into groups based on Recency, Frequency, and Monetary values:
+Champions, Loyal, At Risk, Regular.
+
+3. Pareto 80/20 Rule
+→ Identifies top 20% of products contributing to 80% of total revenue.
+
+4. Conversion Funnel
+→ Tracks share of registered users that became paying customers.
+
+Tech Stack
+Layer	Tools
+Data Storage	Google BigQuery
+ETL & Modeling	SQL (CTE, Window Functions)
+Analysis	Python (Pandas, Pandas-GBQ, Colab)
+Visualization	Looker Studio
+Version Control	GitHub
+
+thelook-ecommerce-final-project/
+├── README.md                     ← main project documentation
+├── sql/                          ← all analytical SQL scripts
+│   ├── monthly_revenue.sql
+│   ├── category_revenue.sql
+│   ├── new_vs_repeat.sql
+│   ├── aov_by_category.sql
+│   ├── rfm_base.sql
+│   ├── pareto_products.sql
+│   ├── cohorts_base.sql
+│   ├── basket_pairs_base.sql
+│   ├── conversion_from_reg_to_paying.sql
+│   └── total_customers.sql
+├── colab/
+│   ├── My_Final_project.ipynb    ← main Python notebook
+│   └── README.md
+├── dashboard/
+│   ├── README.md
+│   └── TheLook_eCommerce_-_Business_Insights_Dashboard.pdf
+├── images/                       ← screenshots for README & dashboard
+│   └── .gitkeep
+└── sql/debug/                    ← helper validation queries
+
+ Key Findings
+	•	Revenue Growth increased by ~65% YoY in 2025.
+	•	Top 3 categories generated >40% of total revenue.
+	•	80% of sales came from 46% of product categories (Pareto principle slightly skewed).
+	•	93.5% of users are “Regular”, while 6.5% are loyal or top-tier customers.
+	•	Customer retention drops significantly after 2–3 months — suggesting a need for loyalty programs.
+	•	Conversion from registered → paying customers fluctuated between 76–82% over the observed period.
+
+⸻
+How to Reproduce
+	1.	Open Google BigQuery
+	•	Create your own dataset thelook_ecommerce_project
+	•	Copy and execute queries from /sql/
+	2.	Run Python notebook in Google Colab
+	•	Authenticate (auth.authenticate_user())
+	•	Set your project & dataset ID
+	3.	Connect BigQuery tables to Looker Studio
+	4.	Recreate visuals or import provided dashboard PDF.
+
+⸻
+
+ Author
+
+Veronika Bastiuchenko
+Data Analyst | Google BigQuery • Looker Studio • Python • SQL
+October 2025
+
+
