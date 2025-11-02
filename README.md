@@ -15,7 +15,6 @@ Key questions addressed:
 - How loyal are customers (retention & RFM segmentation)?
 - What % of registered users convert into paying customers?
 
----
 
 ##  Data Source
 
@@ -98,6 +97,9 @@ Champions, Loyal, At Risk, Regular.
 4. Conversion Funnel
 - Tracks share of registered users that became paying customers.
 
+
+  ## Tech Stack
+
 | Layer | Tools |
 |-------|--------------|
 | **Data Storage** | Google BigQuery |
@@ -110,37 +112,48 @@ Champions, Loyal, At Risk, Regular.
 ## Repository Structure
 
 thelook-ecommerce-final-project/
-├── README.md                     ← main project documentation
-├── sql/                          ← all analytical SQL scripts
-│   ├── monthly_revenue.sql
-│   ├── category_revenue.sql
-│   ├── new_vs_repeat.sql
-│   ├── aov_by_category.sql
-│   ├── rfm_base.sql
-│   ├── pareto_products.sql
-│   ├── cohorts_base.sql
-│   ├── basket_pairs_base.sql
-│   ├── conversion_from_reg_to_paying.sql
-│   └── total_customers.sql
-├── colab/
-│   ├── My_Final_project.ipynb    ← main Python notebook
+├── README.md                              ← Main project documentation
+│
+├── sql/                                   ← All analytical SQL scripts
+│   ├── monthly_revenue.sql                ← Monthly revenue & YoY growth
+│   ├── category_revenue.sql               ← Revenue by product category
+│   ├── new_vs_repeat.sql                  ← New vs returning customers
+│   ├── aov_by_category.sql                ← Average Order Value by category
+│   ├── rfm_base.sql                       ← RFM (Recency, Frequency, Monetary) base
+│   ├── pareto_products.sql                ← Pareto 80/20 product distribution
+│   ├── cohorts_base.sql                   ← User-to-cohort mapping
+│   ├── basket_pairs_base.sql              ← Basket analysis pairs
+│   ├── conversion_from_reg_to_paying.sql  ← Conversion of registered → paying users
+│   └── total_customers.sql                ← Total registered & active customers
+│
+├── colab/                                 ← Python / Google Colab notebooks
+│   ├── My_Final_project.ipynb             ← Main analysis notebook
 │   └── README.md
-├── dashboard/
-│   ├── README.md
-│   └── TheLook_eCommerce_-_Business_Insights_Dashboard.pdf
-├── images/                       ← screenshots for README & dashboard
+│
+├── dashboard/                             ← Looker Studio dashboard & report
+│   ├── TheLook_eCommerce_-_Business_Insights_Dashboard.pdf
+│   └── README.md
+│
+├── images/                                ← Screenshots for README & dashboard
 │   └── .gitkeep
-└── sql/debug/                    ← helper validation queries
+│
+└── sql/debug/                             ← Helper validation queries
 
- Key Findings
-	•	Revenue Growth increased by ~65% YoY in 2025.
-	•	Top 3 categories generated >40% of total revenue.
-	•	80% of sales came from 46% of product categories (Pareto principle slightly skewed).
-	•	93.5% of users are “Regular”, while 6.5% are loyal or top-tier customers.
-	•	Customer retention drops significantly after 2–3 months — suggesting a need for loyalty programs.
-	•	Conversion from registered → paying customers fluctuated between 76–82% over the observed period.
 
- Author
+## Key Findings
+
+- **Revenue Growth:** increased by approximately **+65% YoY** in 2025  
+- **Top 3 Categories:** generated **>40%** of total revenue  
+- **Pareto Principle:** 80% of sales came from **46%** of product categories  
+- **Customer Segments:** 93.5% “Regular” users, 6.5% “Loyal / Top-tier” customers  
+- **Retention:** customer activity drops notably after **2–3 months**, highlighting the need for loyalty initiatives  
+- **Conversion Funnel:** conversion from **registered → paying** customers ranged between **76–82%**
+
+ *This structure section can replace the plain-text version in your README —  
+it will render perfectly aligned on GitHub and be easy to scan visually.*
+
+
+Author
 
 Veronika Bastiuchenko
 Data Analyst | Google BigQuery • Looker Studio • Python • SQL
