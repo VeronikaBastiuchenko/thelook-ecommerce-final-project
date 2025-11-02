@@ -63,24 +63,12 @@ Main tasks implemented in Python:
 - Uploading processed tables back to BigQuery
 - Exporting RFM segment summaries for visualization in Looker Studio
 
-Key Python snippets:
 
-```python
-from google.colab import auth
-auth.authenticate_user()
-
-from pandas_gbq import read_gbq
-import pandas as pd
-pd.set_option('display.max_columns', None)
-
-Dashboard – Business Insights
+## Dashboard – Business Insights
 
 Dashboard link:
 TheLook eCommerce – Business Insights Dashboard (Looker Studio)￼
-(replace with your published URL if public)
-
-PDF version available here:
-TheLook_eCommerce_-_Business_Insights_Dashboard.pdf￼
+https://lookerstudio.google.com/reporting/44e228ca-3ffc-4faa-8076-6474d0c0659b
 
 Dashboard Pages:
 
@@ -96,35 +84,35 @@ Dashboard Pages:
 	•	RFM Segments Distribution (Pie Chart)
 	•	Conversion from Registered to Paying Users (Trend Line)
 
-⸻
 
- Methodologies Used
+ ## Methodologies Used
 
 1. Cohort Analysis
-→ Measures customer retention over months since first purchase.
+- Measures customer retention over months since first purchase.
 Output: retention heatmap (% of active users by cohort).
 
 2. RFM Segmentation
-→ Segments customers into groups based on Recency, Frequency, and Monetary values:
+- Segments customers into groups based on Recency, Frequency, and Monetary values:
 Champions, Loyal, At Risk, Regular.
 
 3. Pareto 80/20 Rule
-→ Identifies top 20% of products contributing to 80% of total revenue.
+- Identifies top 20% of products contributing to 80% of total revenue.
 
 4. Conversion Funnel
-→ Tracks share of registered users that became paying customers.
+- Tracks share of registered users that became paying customers.
 
-Tech Stack
-Layer	Tools
-Data Storage	Google BigQuery
-ETL & Modeling	SQL (CTE, Window Functions)
-Analysis	Python (Pandas, Pandas-GBQ, Colab)
-Visualization	Looker Studio
-Version Control	GitHub
+| Layer | Tools |
+|-------|--------------|
+| **Data Storage** | Google BigQuery
+| **ETL & Modeling** | SQL (CTE, Window Functions)
+| **Analysis** | Python (Pandas, Pandas-GBQ, Colab)
+| **Visualization** | Looker Studio
+| **Version Control** | GitHub
+
 
 thelook-ecommerce-final-project/
-├── README.md                     ← main project documentation
-├── sql/                          ← all analytical SQL scripts
+├── README.md                     - main project documentation
+├── sql/                          - all analytical SQL scripts
 │   ├── monthly_revenue.sql
 │   ├── category_revenue.sql
 │   ├── new_vs_repeat.sql
@@ -136,14 +124,14 @@ thelook-ecommerce-final-project/
 │   ├── conversion_from_reg_to_paying.sql
 │   └── total_customers.sql
 ├── colab/
-│   ├── My_Final_project.ipynb    ← main Python notebook
+│   ├── My_Final_project.ipynb    - main Python notebook
 │   └── README.md
 ├── dashboard/
 │   ├── README.md
 │   └── TheLook_eCommerce_-_Business_Insights_Dashboard.pdf
-├── images/                       ← screenshots for README & dashboard
+├── images/                       - screenshots for README & dashboard
 │   └── .gitkeep
-└── sql/debug/                    ← helper validation queries
+└── sql/debug/                    - helper validation queries
 
  Key Findings
 	•	Revenue Growth increased by ~65% YoY in 2025.
@@ -152,19 +140,6 @@ thelook-ecommerce-final-project/
 	•	93.5% of users are “Regular”, while 6.5% are loyal or top-tier customers.
 	•	Customer retention drops significantly after 2–3 months — suggesting a need for loyalty programs.
 	•	Conversion from registered → paying customers fluctuated between 76–82% over the observed period.
-
-⸻
-How to Reproduce
-	1.	Open Google BigQuery
-	•	Create your own dataset thelook_ecommerce_project
-	•	Copy and execute queries from /sql/
-	2.	Run Python notebook in Google Colab
-	•	Authenticate (auth.authenticate_user())
-	•	Set your project & dataset ID
-	3.	Connect BigQuery tables to Looker Studio
-	4.	Recreate visuals or import provided dashboard PDF.
-
-⸻
 
  Author
 
