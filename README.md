@@ -107,6 +107,8 @@ Champions, Loyal, At Risk, Regular.
 | **Version Control** | GitHub |
 
 
+## Repository Structure
+
 thelook-ecommerce-final-project/
 ├── README.md                     ← main project documentation
 ├── sql/                          ← all analytical SQL scripts
