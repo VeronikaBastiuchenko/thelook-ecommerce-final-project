@@ -11,4 +11,4 @@ This folder contains **screenshots and visuals** used in the project documentati
 - `dashboard_*.png` → dashboard views  
 - `cohort_*.png` → retention heatmaps  
 - `rfm_*.png` → segmentation  
-- `pareto_*.png` → Pareto analysis  
+- `revenue_vs_average_orders_by_categories_*.png` → Pareto analysis  
