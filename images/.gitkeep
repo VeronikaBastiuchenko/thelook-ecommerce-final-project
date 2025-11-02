@@ -1,1 +1,31 @@
+# Images Folder
 
+This folder contains all **supporting images and screenshots** used across the project documentation, including:
+
+### Dashboard Visuals
+Screenshots from the **Looker Studio dashboard**, illustrating:
+- Revenue and YoY Growth charts  
+- Category and product-level performance  
+- Conversion funnel and customer behavior  
+- Cohort retention heatmap  
+- RFM segmentation pie chart  
+- Pareto 80/20 analysis  
+
+### 📘 Documentation Assets
+Images used in:
+- Main `README.md` file  
+- `/dashboard/README.md`  
+- PDF report (`TheLook_eCommerce_-_Business_Insights_Dashboard.pdf`)  
+
+### 🧩 File Naming Convention
+To keep the repository organized:
+- `dashboard_*.png` → dashboard-related visuals  
+- `cohort_*.png` → cohort and retention visualizations  
+- `rfm_*.png` → RFM segmentation  
+- `pareto_*.png` → Pareto analysis  
+- `overview_*.png` → high-level overviews or key findings  
+
+---
+
+💡 *Tip:*  
+When adding new screenshots, compress them before uploading to GitHub (e.g., using [TinyPNG](https://tinypng.com)) to keep the repository lightweight.
