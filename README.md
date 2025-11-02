@@ -69,16 +69,16 @@ https://lookerstudio.google.com/reporting/44e228ca-3ffc-4faa-8076-6474d0c0659b
 Dashboard Pages:
 
 1️ Overview – Revenue Performance
-	•	Yearly Revenue & Growth (YoY%)
-	•	Top 10 Categories by Revenue
-	•	Revenue vs Average Order Value (AOV)
-	•	Pareto 80/20 Product Distribution
+- Yearly Revenue & Growth (YoY%)
+- Top 10 Categories by Revenue
+- Revenue vs Average Order Value (AOV)
+- Pareto 80/20 Product Distribution
 
 2️ Customer Insights & Retention
-	•	Total Revenue, Total Customers, Avg. Order Value
-	•	Cohort Retention Table (month-to-order analysis)
-	•	RFM Segments Distribution (Pie Chart)
-	•	Conversion from Registered to Paying Users (Trend Line)
+- Total Revenue, Total Customers, Avg. Order Value
+- Cohort Retention Table (month-to-order analysis)
+- RFM Segments Distribution (Pie Chart)
+- Conversion from Registered to Paying Users (Trend Line)
 
 
  ## Methodologies Used
@@ -107,37 +107,6 @@ Champions, Loyal, At Risk, Regular.
 | **Analysis** | Python (Pandas, Pandas-GBQ, Colab) |
 | **Visualization** | Looker Studio |
 | **Version Control** | GitHub |
-
-
-## Repository Structure
-
-thelook-ecommerce-final-project/
-├── README.md                              ← Main project documentation
-│
-├── sql/                                   ← All analytical SQL scripts
-│   ├── monthly_revenue.sql                ← Monthly revenue & YoY growth
-│   ├── category_revenue.sql               ← Revenue by product category
-│   ├── new_vs_repeat.sql                  ← New vs returning customers
-│   ├── aov_by_category.sql                ← Average Order Value by category
-│   ├── rfm_base.sql                       ← RFM (Recency, Frequency, Monetary) base
-│   ├── pareto_products.sql                ← Pareto 80/20 product distribution
-│   ├── cohorts_base.sql                   ← User-to-cohort mapping
-│   ├── basket_pairs_base.sql              ← Basket analysis pairs
-│   ├── conversion_from_reg_to_paying.sql  ← Conversion of registered → paying users
-│   └── total_customers.sql                ← Total registered & active customers
-│
-├── colab/                                 ← Python / Google Colab notebooks
-│   ├── My_Final_project.ipynb             ← Main analysis notebook
-│   └── README.md
-│
-├── dashboard/                             ← Looker Studio dashboard & report
-│   ├── TheLook_eCommerce_-_Business_Insights_Dashboard.pdf
-│   └── README.md
-│
-├── images/                                ← Screenshots for README & dashboard
-│   └── .gitkeep
-│
-└── sql/debug/                             ← Helper validation queries
 
 
 ## Key Findings
