@@ -122,7 +122,14 @@ Champions, Loyal, At Risk, Regular.
 Author
 
 Veronika Bastiuchenko
-Data Analyst | Google BigQuery • Looker Studio • Python • SQL
+- Google BigQuery
+- Looker Studio
+- Python • SQL
+  
 October 2025
 
+
+## Dashboard Preview
+![Revenue Overview](images/dashboard_overview.png)
+![Customer Retention](images/cohort_heatmap.png)
 
