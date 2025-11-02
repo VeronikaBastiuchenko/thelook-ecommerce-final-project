@@ -120,7 +120,8 @@ Champions, Loyal, At Risk, Regular.
 - Conversion rate 76–82% → optimize registration funnel for new users.  
 - Only 6.5% of users are “Loyal” or “Best” → develop a rewards program.
 
-Author
+
+## Author
 
 Veronika Bastiuchenko
 - Google BigQuery
