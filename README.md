@@ -130,6 +130,6 @@ October 2025
 
 
 ## Dashboard Preview
-![Revenue Overview](images/dashboard_overview.png)
-![Customer Retention](images/cohort_heatmap.png)
+![Revenue Overview](images/dashboard.png)
+![Customer Retention](images/cohort_.png)
 
